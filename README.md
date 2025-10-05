@@ -33,7 +33,7 @@ You can also customize the `Request timeout` and `User-Agent` header at build ti
 Install the application
 
 ```shell
-go install github.com/dvs-crcr/ews-mailer
+go install github.com/dvs-crcr/ews-mailer@latest
 ```
 
 *Only for testing proposes!* Fill in the arguments and environment variables and run the application using the command below.
