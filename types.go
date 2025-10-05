@@ -1,5 +1,19 @@
 package main
 
+import "time"
+
+type Config struct {
+	URL      string
+	Domain   string
+	Username string
+	Password string
+	From     string
+	To       []string
+	Subject  string
+	Body     string
+	Timeout  time.Duration
+}
+
 // Web services reference
 // https://learn.microsoft.com/en-us/exchange/client-developer/web-service-reference/createitem-operation-email-message
 
