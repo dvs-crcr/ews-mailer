@@ -1,5 +1,5 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/dvs-crcr/ews-mailer)](https://goreportcard.com/report/github.com/dvs-crcr/ews-mailer)
-
+[![Last Commit](https://img.shields.io/github/last-commit/dvs-crcr/ews-mailer)](https://github.com/dvs-crcr/ews-mailer/commits/main)
 # ews-mailer
 
 > A tiny application for sending automated plaintext messages via EWS w/o any external dependencies.
