@@ -8,10 +8,15 @@
 ### Environment variables
 
 ```dotenv
+# EWS_URL - Exchange Web Services (EWS) URL 
 EWS_URL=https://mail.domainname.com/EWS/Exchange.asmx
+# EWS_DOMAIN - Domain name
 EWS_DOMAIN=DOMAINNAME
+# EWS_USERNAME - Username
 EWS_USERNAME=username.io
-EWS_PASSWORD=superSecretPass$
+# EWS_PASSWORD - Super secret password
+EWS_PASSWORD=superSecretPass
+# EWS_FROM - From email address
 EWS_FROM=username.io@domainname.com
 ```
 
@@ -31,9 +36,14 @@ Install the application
 go install github.com/dvs-crcr/ews-mailer
 ```
 
-Fill arguments and run the application using the command below.
+*Only for testing proposes!* Fill in the arguments and environment variables and run the application using the command below.
 
 ```shell
+EWS_URL=https://mail.domainname.com/EWS/Exchange.asmx \
+EWS_DOMAIN=DOMAINNAME \
+EWS_USERNAME=username.io \
+EWS_PASSWORD=superSecretPass \
+EWS_FROM=username.io@domainname.com \
 ews-mailer \
   -to "alice@domainname.com,bob@domainname.com" \
   -subject "System Notification" \
